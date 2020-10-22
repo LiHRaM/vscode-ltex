@@ -535,6 +535,9 @@ export default class DependencyManager {
             javaVersion = versionInfo['java'];
             javaMajorVersion = parseInt(match[1]);
             if (javaMajorVersion == 1) javaMajorVersion = parseInt(match[2]);
+          } else {
+            javaVersion = versionInfo['java'];
+            javaMajorVersion = parseInt(javaVersion);
           }
         }
 
